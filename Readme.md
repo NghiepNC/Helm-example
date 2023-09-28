@@ -19,7 +19,7 @@ helm install my-prometheus-dev prometheus-community/prometheus --version 15.12.0
 helm ls --all-namespaces    			# get tất cả app  deploy with helm
 helm ls --all-namespaces -a  			# get tất cả app (status)
 helm uninstall my-prometheus --keep-history   # xoá app nhưng giữu lại history để có thể rollback
-helm upgrade my-prometheus-dev prometheus-community/prometheus --version 25.0.0 --namespace dev  # xoá app nhưng giữu lại history để có thể rollback
+helm upgrade my-prometheus-dev prometheus-community/prometheus --version 25.0.0 --namespace dev  # upgrade cho app , app sẽ được nâng cấp version
 helm history my-prometheus-dev -n dev 			#xem lịch sử của app
 helm rollback my-prometheus-dev 1 -n dev
 helm show values  prometheus-community/prometheus
