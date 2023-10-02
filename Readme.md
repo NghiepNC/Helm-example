@@ -5,6 +5,9 @@ Thông số hoá , đặt biến để giúp dể dàng quản lý k8s hơn
 1. Cấu trúc resoure
 ![Alt text](Images/image-1.png){width=20px height=15px}
 
+	- Template: Folder template chứa các file để deploy k8s (chứa file theo dạng đục lỗ biến)
+	- Char.yaml: Khai báo metadata cho Helm
+	- values.yaml: Các file value chứa giá trị (lấp vào giá trị các biến trong file template)
 
 2. Command thường sử dụng
 ![command](Images/image.png)
